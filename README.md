@@ -2,6 +2,20 @@
 
 > 64 battle-tested, copy-paste-ready prompts for Claude, ChatGPT, and other AI assistants. Organized by use case. Built for developers who ship.
 
+## Pricing
+
+**$19 — One-time purchase. Not a subscription.**
+
+[**Buy Now**](https://buy.stripe.com/3cI6oG5iJ8hA93m4xk08g04)
+
+What you get:
+- All 64 prompts across 7 categories
+- Works with Claude, ChatGPT, Gemini, and any AI model
+- Team usage included (share with your entire team)
+- Lifetime updates as new prompts are added
+
+**Save $119:** Get this + 6 other products in the [Complete Bundle for $99](https://buy.stripe.com/5kQeVceTj0P8enGe7U08g06)
+
 ## Why PromptVault?
 
 You know AI can help you code faster, but crafting the right prompt takes more time than doing the task yourself. PromptVault solves this: **64 production-ready prompts** across 7 categories that you can copy, paste, and customize in under 30 seconds.
