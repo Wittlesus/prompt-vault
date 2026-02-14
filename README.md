@@ -127,6 +127,17 @@ A: The collection is updated as AI capabilities evolve and new use cases emerge.
 **Q: Can I modify the prompts?**
 A: Absolutely. In fact, we encourage it. The "Tips for Customization" section on each prompt is designed to help you adapt them. Make them your own.
 
+## More Developer Tools
+
+| Product | Description | Price |
+|---------|-------------|-------|
+| [LaunchFast SaaS Starter](https://github.com/Wittlesus/launchfast-starter) | Next.js 16 boilerplate with auth, payments, AI, email | $79 |
+| [PageBrain Extension](https://github.com/Wittlesus/pagebrain-extension) | Summarize any page with AI (Chrome) | Free |
+| [SEO Blog Engine](https://github.com/Wittlesus/seo-blog-engine) | CLI for generating SEO blog posts | $29 |
+| [Indie Hacker Toolkit](https://github.com/Wittlesus/indie-hacker-toolkit) | 5 planning templates for solo founders | $19 |
+| [CursorRules Pro](https://github.com/Wittlesus/cursorrules-pro) | .cursorrules for 8 popular stacks | $14 |
+| [Complete Bundle](https://buy.stripe.com/5kQeVceTj0P8enGe7U08g06) | All products above | $99 |
+
 ## License
 
 This prompt library is sold as a digital product. See [GUMROAD_LISTING.md](GUMROAD_LISTING.md) for purchase details and licensing.
