@@ -1,0 +1,30 @@
+{
+  "context": {
+    "stage": "early growth",
+    "monthly_users": "5000",
+    "team_size": "3 engineers",
+    "focus": "retention and activation"
+  },
+  "features": [
+    {
+      "name": "Email digest feature",
+      "description": "Weekly summary email of user activity and recommendations"
+    },
+    {
+      "name": "Dark mode",
+      "description": "Add dark mode toggle to app settings"
+    },
+    {
+      "name": "Slack integration",
+      "description": "Send notifications to Slack channels"
+    },
+    {
+      "name": "Export to CSV",
+      "description": "Let users export their data as CSV"
+    },
+    {
+      "name": "Team collaboration",
+      "description": "Multi-user workspaces with sharing and permissions"
+    }
+  ]
+}

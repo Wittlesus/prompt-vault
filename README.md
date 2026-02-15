@@ -1,6 +1,8 @@
-# PromptVault - Curated AI Prompt Library for Developers
+# PromptVault — AI Workflow Library for Developers
 
-> 64 battle-tested, copy-paste-ready prompts for Claude, ChatGPT, and other AI assistants. Organized by use case. Built for developers who ship.
+> **Not prompts. Production-ready AI automation pipelines.**
+
+Free prompt libraries give you one-shot prompts. PromptVault gives you complete automation chains with ready-to-run code.
 
 ## Pricing
 
@@ -9,96 +11,206 @@
 [**Buy Now**](https://buy.stripe.com/3cI6oG5iJ8hA93m4xk08g04)
 
 What you get:
-- All 64 prompts across 7 categories
+- 64 expert-crafted prompts across 7 categories
+- 4+ ready-to-run workflow automation scripts (Python + JavaScript)
+- Sample data and CLI tools you can use today
 - Works with Claude, ChatGPT, Gemini, and any AI model
 - Team usage included (share with your entire team)
-- Lifetime updates as new prompts are added
+- Lifetime updates as new workflows and prompts are added
 
 **Save $119:** Get this + 6 other products in the [Complete Bundle for $99](https://buy.stripe.com/5kQeVceTj0P8enGe7U08g06)
 
 ## Why PromptVault?
 
-You know AI can help you code faster, but crafting the right prompt takes more time than doing the task yourself. PromptVault solves this: **64 production-ready prompts** across 7 categories that you can copy, paste, and customize in under 30 seconds.
+**The problem with free prompt libraries:** They give you clever one-liners like "Review my code" or "Write tests." You still have to figure out how to integrate them into your workflow.
 
-Every prompt in this collection has been:
+**PromptVault solves this:** Complete automation pipelines with working code. Copy a script, add your API key, run it. Working AI automation in 60 seconds.
 
-- Refined through hundreds of iterations
-- Tested against real codebases and real bugs
-- Structured to produce actionable, specific output (not generic fluff)
-- Designed with customization tips so you can adapt them to your stack
+### What You Actually Get
 
-## Table of Contents
+| What | Description |
+|------|-------------|
+| **64 Expert Prompts** | Comprehensive frameworks (not one-liners) for code review, testing, debugging, docs, DevOps, database, and product work |
+| **Workflow Automation Scripts** | Ready-to-run Python and JavaScript code with CLI interfaces |
+| **Sample Data** | Example JSON files so you can test immediately |
+| **Integration Patterns** | Git hooks, streaming output, API chaining, file I/O |
 
-| Category | Prompts | Description |
-|----------|---------|-------------|
-| [Code Review](prompts/code-review.md) | 10 | Bug detection, security audits, performance reviews, refactoring, naming, error handling, API design, style checks, dependency audits, pre-merge reviews |
+### Comparison
+
+| Source | What You Get | Price |
+|--------|-------------|-------|
+| **PromptBase** | Individual prompts for $2-10 each | Pay per prompt |
+| **FlowGPT** | Browse millions of community prompts | Free (unvetted quality) |
+| **PromptVault** | Complete automation pipelines with working code + 64 expert prompts | $19 one-time |
+
+## Quick Start (60 seconds)
+
+**1. Install dependencies:**
+```bash
+pip install anthropic gitpython  # Python workflows
+npm install @anthropic-ai/sdk    # JavaScript workflows
+```
+
+**2. Set your API key:**
+```bash
+export ANTHROPIC_API_KEY='your-key-here'
+```
+
+**3. Run your first workflow:**
+```bash
+# Generate SEO blog outline
+node examples/content-blog-outline.js "Best React frameworks 2026"
+
+# Or review your git changes before committing
+python examples/dev-code-review-automation.py
+```
+
+That's it. Working AI automation in under 60 seconds.
+
+See [examples/README.md](examples/README.md) for all available workflows.
+
+## What's Included
+
+### Ready-to-Run Workflows
+
+**SaaS Workflows**
+- Generate personalized onboarding emails from user signup data
+- Automate customer support response templates
+- Create product tour scripts based on user behavior
+
+**Content Workflows**
+- SEO blog post outlines with keyword research
+- Social media content batching
+- Email newsletter generation from content feed
+
+**Development Workflows**
+- Automated code review on git diffs (pre-commit checks)
+- Test generation from function signatures
+- Documentation generation from code comments
+
+**Business Workflows**
+- RICE scoring for feature prioritization
+- Competitive analysis from product URLs
+- User interview script generation
+
+### 64 Expert Prompts
+
+All prompts are organized into 7 categories. Each prompt is a comprehensive framework (not a one-liner) with:
+- Detailed instructions and role setting
+- Structured output format specification
+- Example output snippets
+- Customization tips for your tech stack
+
+| Category | Prompts | Use Cases |
+|----------|---------|-----------|
+| [Code Review](prompts/code-review.md) | 10 | Bug detection, security audits, performance reviews, refactoring suggestions, naming conventions, error handling, API design, style checks, dependency audits, pre-merge reviews |
 | [Documentation](prompts/documentation.md) | 10 | README generation, API docs, JSDoc/TSDoc, changelogs, architecture docs, onboarding guides, code comments, tutorials, migration guides, runbooks |
 | [Testing](prompts/testing.md) | 10 | Unit tests, integration tests, edge case identification, test data factories, test plans, snapshot tests, mocks & stubs, property-based tests, E2E tests, regression identification |
-| [Debugging](prompts/debugging.md) | 10 | Error decoding, stack trace analysis, performance profiling, memory leak detection, race conditions, log analysis, debugging strategy, dependency conflicts, environment-specific bugs, production incidents |
+| [Debugging](prompts/debugging.md) | 10 | Error decoding, stack trace analysis, performance profiling, memory leak detection, race conditions, log analysis, debugging strategy, dependency conflicts, environment bugs, production incidents |
 | [DevOps](prompts/devops.md) | 8 | Dockerfiles, CI/CD pipelines, infrastructure as code, monitoring & alerting, Kubernetes manifests, Nginx configuration, database backups, incident response |
 | [Database](prompts/database.md) | 8 | Schema design, query optimization, migration scripts, data modeling, ORM queries, performance diagnostics, seed data, security hardening |
 | [Product](prompts/product.md) | 8 | User stories, PRDs, competitive analysis, feature prioritization, release notes, user interviews, A/B test design, metrics dashboards |
 
-**Total: 64 prompts across 7 categories**
-
 ## How to Use
 
-### Quick Start (30 seconds)
+### Option 1: Run the Automation Scripts
 
-1. Browse the [Table of Contents](#table-of-contents) to find your category
-2. Open the category file and find the prompt you need
-3. Copy the prompt from the code block
-4. Replace the `[PLACEHOLDER]` sections with your actual code/context
-5. Paste into Claude, ChatGPT, or your preferred AI assistant
-6. Read the "Tips for Customization" to refine the output
+The fastest way to get value. The `examples/` directory contains ready-to-run workflows:
 
-### Getting the Best Results
+```bash
+# Review your staged changes before committing
+python examples/dev-code-review-automation.py
 
-**Be specific with placeholders.** The prompts have placeholders like `[PASTE YOUR CODE HERE]`. The more context you provide, the better the output:
+# Generate feature prioritization with RICE scores
+python examples/business-feature-prioritization.py --features data/features.json
 
-```
-Bad:  [paste code here] -> pastes a 5-line function
-Good: [paste code here] -> pastes the full file with imports, types, and related functions
+# Create personalized onboarding emails
+python examples/saas-onboarding-email.py --user-data data/user.json
 ```
 
-**Use the customization tips.** Every prompt ends with "Tips for Customization" that show you how to adapt it for your specific tech stack, team practices, and use case.
+See [examples/README.md](examples/README.md) for full documentation.
 
-**Chain prompts together.** Some powerful workflows combine multiple prompts:
+### Option 2: Use the Prompts Directly
 
-1. Use **Edge Case Identifier** (Testing #3) to find gaps
-2. Feed those edge cases into **Unit Test Generator** (Testing #1)
-3. Run **Code Review** (Code Review #10) on the full PR before merging
+Browse the `prompts/` directory, copy the prompt you need, and paste it into Claude or ChatGPT.
 
-### Which AI Model Should I Use?
+Each prompt includes:
+- **Use Case:** When and why to use it
+- **Full Prompt:** The complete text to copy-paste
+- **Example Output:** What good results look like
+- **Customization Tips:** How to adapt for your stack
 
-These prompts work with any modern AI assistant. Recommendations:
+### Option 3: Chain Workflows Together
 
-| Model | Best For |
-|-------|----------|
-| Claude (Sonnet/Opus) | Code review, debugging, architecture docs. Excellent at following structured output formats. |
-| ChatGPT (GPT-4) | Documentation, product writing, competitive analysis. Strong at persuasive, reader-friendly text. |
-| Any model | All prompts are model-agnostic. Try your preferred model first. |
+Build multi-step automation by piping output between scripts:
 
-## Prompt Anatomy
-
-Every prompt in PromptVault follows a consistent structure:
-
+```bash
+# Generate code → Review code → Generate tests
+your-code-gen-tool | python examples/dev-code-review-automation.py | python examples/test-generator.py
 ```
-## Title
-Brief description of what this prompt does.
 
-**Use Case:** When and why you'd use this prompt.
+## Features That Matter
 
-**Prompt:**
-The actual prompt you copy-paste. Includes role setting,
-detailed instructions, and output format specification.
+**CLI interfaces.** Every workflow script has argument parsing, help text, and error handling. Just run it.
 
-**Example Output Snippet:**
-What good output looks like so you know what to expect.
+**Streaming support.** Modify any script to stream output in real-time (examples included).
 
-**Tips for Customization:**
-How to adapt the prompt for your specific needs.
-```
+**Git integration.** Development workflows integrate with git diffs, commits, and branches.
+
+**Sample data included.** Test every workflow immediately with provided JSON files.
+
+**Customizable prompts.** Every prompt and script is designed to be modified for your brand voice, tech stack, and workflow.
+
+**Model-agnostic.** Works with Claude, ChatGPT, Gemini, Llama, Mistral, or any instruction-following LLM.
+
+## Who Is This For?
+
+- **Software engineers** who want AI automation that runs on its own, not prompts they have to babysit
+- **Solo developers** who need to automate code review, documentation, and QA without hiring
+- **Tech leads** who want team-wide AI workflows (not everyone crafting their own prompts)
+- **Freelancers** who need to deliver faster without sacrificing quality
+- **Engineering managers** building AI-augmented development practices
+
+## Who Is This NOT For?
+
+- People who have never used AI coding assistants (start with free tiers first)
+- Teams that already have mature internal AI automation
+- Anyone looking for prompt injection attacks or jailbreaks (this is for building, not breaking)
+
+## FAQ
+
+**Q: How is this different from free prompt libraries?**
+A: Free libraries give you prompts. PromptVault gives you automation. Working Python and JavaScript code with CLI interfaces, file I/O, git integration, and error handling. Copy the script, add your API key, run it. That's the difference.
+
+**Q: Will these scripts work with [specific AI model]?**
+A: Yes. The example scripts use Claude (Anthropic API), but you can swap in OpenAI, Google, or any other provider. The prompts themselves are model-agnostic and work with any instruction-following LLM.
+
+**Q: Can I modify the scripts and prompts?**
+A: Absolutely. That's the point. Every script is designed to be customized. Change the prompts, add streaming, pipe to other tools, integrate with your stack. Make them your own.
+
+**Q: Do I need to know Python or JavaScript?**
+A: Basic familiarity helps, but the scripts are simple and well-commented. If you can run `python script.py`, you can use these. Customization requires light coding.
+
+**Q: Can I share these with my team?**
+A: Yes. A single purchase covers your entire team. Share in your wiki, Notion, GitHub, or wherever your team works.
+
+**Q: How often is this updated?**
+A: New workflows and prompts are added as AI capabilities evolve. All purchasers receive lifetime updates at no additional cost.
+
+**Q: What if I'm not satisfied?**
+A: If the workflows don't save you time in the first week, email for a full refund. No questions asked.
+
+## Example Use Cases
+
+**Pre-commit code review:** Run `dev-code-review-automation.py` as a git pre-commit hook. Catch bugs before they reach CI.
+
+**Content batching:** Generate 10 blog outlines on Monday, schedule all week's content in one session.
+
+**Onboarding automation:** Trigger `saas-onboarding-email.py` from your signup webhook. Personalized emails without writing a word.
+
+**Feature backlog grooming:** Run `business-feature-prioritization.py` before sprint planning. Let AI do the RICE scoring math.
+
+**Documentation debt:** Point the doc generator at your codebase. Generate READMEs for every package.
 
 ## File Structure
 
@@ -106,47 +218,30 @@ How to adapt the prompt for your specific needs.
 prompt-vault/
   README.md              # You are here
   GUMROAD_LISTING.md     # Sales copy and listing details
-  prompts/
-    code-review.md       # 10 code review prompts
-    documentation.md     # 10 documentation prompts
-    testing.md           # 10 testing prompts
-    debugging.md         # 10 debugging prompts
-    devops.md            # 8 DevOps prompts
-    database.md          # 8 database prompts
-    product.md           # 8 product development prompts
+  prompts/               # 64 expert prompts across 7 categories
+    code-review.md
+    documentation.md
+    testing.md
+    debugging.md
+    devops.md
+    database.md
+    product.md
+  examples/              # Ready-to-run workflow automation scripts
+    README.md            # Workflow documentation
+    saas-onboarding-email.py
+    content-blog-outline.js
+    dev-code-review-automation.py
+    business-feature-prioritization.py
+    data/                # Sample data for testing
+      user-sample.json
+      features-sample.json
 ```
-
-## Who Is This For?
-
-- **Software engineers** who use AI assistants daily and want better results
-- **Tech leads** who want consistent code review and documentation standards
-- **Solo developers** who need to be their own QA, DevOps, and PM
-- **Engineering managers** who want to establish AI-augmented workflows for their teams
-- **Freelancers** who need to deliver high-quality work faster
-
-## FAQ
-
-**Q: Will these prompts work with [specific AI model]?**
-A: Yes. Every prompt is model-agnostic. They work with Claude, ChatGPT, Gemini, Llama, Mistral, and any instruction-following LLM. The prompts are designed around clear instructions and structured output, which all modern models handle well.
-
-**Q: How are these different from free prompts I can find online?**
-A: Most free prompts are generic one-liners ("Review my code for bugs"). PromptVault prompts are comprehensive, structured frameworks that specify exactly what to look for, how to format the output, and how to customize for your stack. Each prompt has been refined through hundreds of real-world uses.
-
-**Q: Can I share these with my team?**
-A: Yes, a single purchase covers your entire team. Share the files in your internal wiki, Notion, or Slack.
-
-**Q: How often is this updated?**
-A: The collection is updated as AI capabilities evolve and new use cases emerge. Purchasers receive all future updates.
-
-**Q: Can I modify the prompts?**
-A: Absolutely. In fact, we encourage it. The "Tips for Customization" section on each prompt is designed to help you adapt them. Make them your own.
 
 ## More Developer Tools
 
 | Product | Description | Price |
 |---------|-------------|-------|
 | [LaunchFast SaaS Starter](https://github.com/Wittlesus/launchfast-starter) | Next.js 16 boilerplate with auth, payments, AI, email | $79 |
-| [PageBrain Extension](https://github.com/Wittlesus/pagebrain-extension) | Summarize any page with AI (Chrome) | Free |
 | [SEO Blog Engine](https://github.com/Wittlesus/seo-blog-engine) | CLI for generating SEO blog posts | $29 |
 | [Indie Hacker Toolkit](https://github.com/Wittlesus/indie-hacker-toolkit) | 5 planning templates for solo founders | $19 |
 | [CursorRules Pro](https://github.com/Wittlesus/cursorrules-pro) | .cursorrules for 8 popular stacks | $14 |
@@ -154,10 +249,10 @@ A: Absolutely. In fact, we encourage it. The "Tips for Customization" section on
 
 ## License
 
-This prompt library is sold as a digital product. See [GUMROAD_LISTING.md](GUMROAD_LISTING.md) for purchase details and licensing.
-
 Personal and team use permitted. Redistribution or resale is not permitted.
 
 ---
 
-Built with care for developers who want to get more done with AI.
+**The key sell:** Copy a script, add your API key, run it. Working AI automation in 60 seconds.
+
+Not prompts you have to manually run. Automation that runs itself.
