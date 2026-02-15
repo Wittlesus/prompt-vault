@@ -58,40 +58,46 @@ export ANTHROPIC_API_KEY='your-key-here'
 
 **3. Run your first workflow:**
 ```bash
-# Generate SEO blog outline
-node examples/content-blog-outline.js "Best React frameworks 2026"
+# Generate full blog post with SEO and social media content
+python examples/python/content_pipeline.py "How to build a SaaS in 2026"
 
-# Or review your git changes before committing
-python examples/dev-code-review-automation.py
+# Or review your git changes for bugs and security issues
+git diff | python examples/python/code_reviewer.py -
+
+# Or classify and respond to support emails
+cat support_email.txt | python examples/python/support_classifier.py -
 ```
 
 That's it. Working AI automation in under 60 seconds.
 
-See [examples/README.md](examples/README.md) for all available workflows.
+See [examples/README.md](examples/README.md) for all available workflows and detailed documentation.
 
 ## What's Included
 
 ### Ready-to-Run Workflows
 
-**SaaS Workflows**
-- Generate personalized onboarding emails from user signup data
-- Automate customer support response templates
-- Create product tour scripts based on user behavior
+**Content Pipeline** - Full content generation automation
+- Generates comprehensive outline → writes full draft → optimizes for SEO → creates social posts
+- One command goes from topic to publishable article with distribution plan
+- Example: `python examples/python/content_pipeline.py "How to build a SaaS"`
 
-**Content Workflows**
-- SEO blog post outlines with keyword research
-- Social media content batching
-- Email newsletter generation from content feed
+**Support Classifier** - Automated customer support triage
+- Classifies support emails by category, priority, and sentiment
+- Drafts professional responses automatically
+- Suggests internal action items and escalation triggers
+- Example: `cat email.txt | python examples/python/support_classifier.py -`
 
-**Development Workflows**
-- Automated code review on git diffs (pre-commit checks)
-- Test generation from function signatures
-- Documentation generation from code comments
+**Code Reviewer** - Comprehensive automated code review
+- Analyzes git diffs for bugs, security issues, and performance problems
+- Provides structured feedback with severity ratings
+- Works directly with git: `git diff | python examples/python/code_reviewer.py -`
 
-**Business Workflows**
-- RICE scoring for feature prioritization
-- Competitive analysis from product URLs
-- User interview script generation
+**Competitor Analyzer** - Competitive intelligence automation
+- Fetches and analyzes competitor websites
+- Generates feature comparison, SWOT analysis, and positioning strategy
+- Example: `python examples/python/competitor_analyzer.py "https://competitor.com" "YourProduct"`
+
+All workflows available in both **Python** and **JavaScript** + **CLI wrappers** for easy use.
 
 ### 64 Expert Prompts
 
@@ -118,17 +124,20 @@ All prompts are organized into 7 categories. Each prompt is a comprehensive fram
 The fastest way to get value. The `examples/` directory contains ready-to-run workflows:
 
 ```bash
-# Review your staged changes before committing
-python examples/dev-code-review-automation.py
+# Full content pipeline: outline → draft → SEO → social posts
+python examples/python/content_pipeline.py "Your topic here"
 
-# Generate feature prioritization with RICE scores
-python examples/business-feature-prioritization.py --features data/features.json
+# Automated code review: bugs, security, performance
+git diff main...feature | python examples/python/code_reviewer.py -
 
-# Create personalized onboarding emails
-python examples/saas-onboarding-email.py --user-data data/user.json
+# Support email classification and response drafting
+cat customer_email.txt | python examples/python/support_classifier.py -
+
+# Competitive analysis with SWOT and strategy
+python examples/python/competitor_analyzer.py "https://competitor.com" "YourProduct"
 ```
 
-See [examples/README.md](examples/README.md) for full documentation.
+All workflows available in Python, JavaScript, and CLI wrapper scripts. See [examples/README.md](examples/README.md) for full documentation.
 
 ### Option 2: Use the Prompts Directly
 
@@ -228,13 +237,21 @@ prompt-vault/
     product.md
   examples/              # Ready-to-run workflow automation scripts
     README.md            # Workflow documentation
-    saas-onboarding-email.py
-    content-blog-outline.js
-    dev-code-review-automation.py
-    business-feature-prioritization.py
-    data/                # Sample data for testing
-      user-sample.json
-      features-sample.json
+    python/              # Python implementations
+      content_pipeline.py
+      support_classifier.py
+      code_reviewer.py
+      competitor_analyzer.py
+    javascript/          # JavaScript implementations
+      content_pipeline.js
+      support_classifier.js
+      code_reviewer.js
+      competitor_analyzer.js
+    cli/                 # Shell script wrappers
+      content-pipeline.sh
+      support-classifier.sh
+      code-reviewer.sh
+      competitor-analyzer.sh
 ```
 
 ## More Developer Tools
